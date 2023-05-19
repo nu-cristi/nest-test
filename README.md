@@ -58,6 +58,28 @@ $ yarn run test:e2e
 $ yarn run test:cov
 ```
 
+## CLI commands for generating resources
+
+```bash
+#module generation
+$ nest g mo [module name]
+
+#controller generation
+$ nest g co [controller name]
+
+#service generation
+$ nest g s [service name]
+```
+
+Alternatively a single command can be used for generating a whole resource, including an entity and DTOs
+
+```bash
+#full resource generation
+nest g resource [resource name]
+
+#add the following flag if you want to avoid creating test files
+--no-spec
+```
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
